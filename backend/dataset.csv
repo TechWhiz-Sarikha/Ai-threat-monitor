@@ -1,0 +1,10 @@
+payload,label
+' OR 1=1 --,malicious
+UNION SELECT password FROM users,malicious
+<script>alert(1)</script>,malicious
+../../etc/passwd,malicious
+DROP TABLE users;,malicious
+normal search query,normal
+view product page,normal
+user login attempt,normal
+product filter sort,normal
